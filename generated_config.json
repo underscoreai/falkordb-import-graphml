@@ -1,0 +1,23 @@
+{
+  "node_labels": {
+    "Company": {
+      "target_label": "Company",
+      "property_mappings": {}
+    },
+    "Person": {
+      "target_label": "Person",
+      "property_mappings": {}
+    }
+  },
+  "relationship_types": {
+    "WORKS_AT": {
+      "target_type": "WORKS_AT",
+      "property_mappings": {}
+    },
+    "KNOWS": {
+      "target_type": "KNOWS",
+      "property_mappings": {}
+    }
+  },
+  "property_transformations": {}
+}

@@ -1,0 +1,33 @@
+{
+  "node_labels": {
+    "Person": {
+      "target_label": "Person",
+      "property_mappings": {
+        "old_name": "name",
+        "old_age": "age"
+      }
+    },
+    "Company": {
+      "target_label": "Company",
+      "property_mappings": {
+        "old_company_name": "name"
+      }
+    }
+  },
+  "relationship_types": {
+    "WORKS_AT": {
+      "target_type": "WORKS_AT",
+      "property_mappings": {
+        "old_start_date": "start_date"
+      }
+    },
+    "KNOWS": {
+      "target_type": "KNOWS",
+      "property_mappings": {}
+    }
+  },
+  "property_transformations": {
+    "date_fields": ["start_date", "end_date"],
+    "numeric_fields": ["age", "salary"]
+  }
+}

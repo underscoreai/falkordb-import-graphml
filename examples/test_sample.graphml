@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="node_label" for="node" attr.name="label" attr.type="string"/>
+  <key id="name" for="node" attr.name="name" attr.type="string"/>
+  <key id="age" for="node" attr.name="age" attr.type="string"/>
+  <key id="founded" for="node" attr.name="founded" attr.type="string"/>
+  <key id="edge_label" for="edge" attr.name="label" attr.type="string"/>
+  <key id="since" for="edge" attr.name="since" attr.type="string"/>
+  <key id="position" for="edge" attr.name="position" attr.type="string"/>
+
+  <graph id="G" edgedefault="directed">
+    <node id="n1">
+      <data key="node_label">Person</data>
+      <data key="name">Alice</data>
+      <data key="age">30</data>
+    </node>
+    <node id="n2">
+      <data key="node_label">Person</data>
+      <data key="name">Bob</data>
+      <data key="age">35</data>
+    </node>
+    <node id="n3">
+      <data key="node_label">Company</data>
+      <data key="name">TechCorp</data>
+      <data key="founded">2010</data>
+    </node>
+    <edge id="e1" source="n1" target="n2">
+      <data key="edge_label">KNOWS</data>
+      <data key="since">2020</data>
+    </edge>
+    <edge id="e2" source="n1" target="n3">
+      <data key="edge_label">WORKS_AT</data>
+      <data key="position">Engineer</data>
+    </edge>
+    <edge id="e3" source="n2" target="n3">
+      <data key="edge_label">WORKS_AT</data>
+      <data key="position">Manager</data>
+    </edge>
+  </graph>
+</graphml>
